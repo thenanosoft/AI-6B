@@ -1,12 +1,36 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template/scrolling-nav)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 10px 0px 0px 0px;
+    font-weight: Bold;
+}
+
 header {
-  padding: 156px 0 100px;
+    padding: 156px 0 100px;
 }
 
 section {
-  padding: 150px 0;
+    padding: 150px 0;
+}
+
+.point {
+    font-weight: 600;
+    color: #007BFF;
+}
+
+.question {
+    padding: 10px 0px 0px 0px;
+    color: red;
+    display: block;
+}
+
+.important-note {
+    padding: 10px;
+    font-family: cursive;
+    font-weight: bold;
 }
