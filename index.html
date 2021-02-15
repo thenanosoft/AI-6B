@@ -703,8 +703,8 @@
             
             <p class="lead">Consider the statement: <span class="text-highlight">"x is an integer." </span>it consists of two parts, the first part <code>x</code> is the <span class="text-highlight">subject</span> of the statement and second part <code>is an integer</code>, is known as a <span class="text-highlight">predicate.</span></p>
             
-            <div class="">
-                <img class="" src="images/first-order-logic-in-artificial-intelligence.png" alt="">
+            <div class="class="center mx-auto col-lg-8"">
+                <img class="col-lg-12" src="images/first-order-logic-in-artificial-intelligence.png" alt="">
             </div>
             
             <h2>Quantifiers in First-order logic:</h2>
@@ -741,8 +741,8 @@
             
             <p>Let a variable x which refers to a cat so all x can be represented in UOD as below:</p>
             
-            <div>
-                <img src="images/first-order-logic-in-artificial-intelligence2.png" alt="">
+            <div class="center mx-auto col-lg-8">
+                <img class="col-lg-12" src="images/first-order-logic-in-artificial-intelligence2.png" alt="">
             </div>
             
             <code>∀x man(x) → drink (x, coffee).</code><br>
@@ -816,9 +816,262 @@
     </div>
   </section>
   
-  
-  
   <section id="slide12" class="bg-dark text-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <h4>Data Types?</h4>
+            
+            <ul>
+                <li>Text</li>
+                <li>Numbers</li>
+                <li>Images</li>
+                <li>Audios</li>
+                <li>Videos</li>
+                <li>Tables</li>
+                <li>Graphs</li>
+                <li>Transactions</li>
+            </ul>
+            
+            <h4>DataFied?</h4>
+            <p>Wherever we go, we are “datafied"</p>
+            <ul>
+                <li>Smartphones are tracking our locations.</li>
+                <li>We leave a data trail in our web browsing.</li>
+                <li>Interaction in social networks.</li>
+            </ul>
+            
+            <h4>Data Science Process</h4>
+            <div class="center mx-auto col-lg-8">
+                <img class="col-lg-12" src="images/data-science-process.jpg" alt="data science process">
+            </div>
+            
+            <h4>Machine Learning Vs Statistics</h4>
+            
+            <div class="table-responsive">
+                <table class="table table-bordered text-light">
+                    <tr>
+                        <th>Machine Learning</th>
+                        <th>Statistical</th>
+                    </tr>
+                    <tr>
+                        <td>Decision trees</td>
+                        <td>Hypothesis testing</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Rule induction</td>
+                        <td>Experimental design</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Neural Networks</td>
+                        <td>Linear regression</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Clustering method</td>
+                        <td>Logistic regression</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Association rules</td>
+                        <td>--</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Visualization</td>
+                        <td>--</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Genetic algorithm</td>
+                        <td>--</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Graphical models</td>
+                        <td>--</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+            <h2>Supervised &amp; Unsupervised</h2>
+            <div class="center mx-auto col-lg-8">
+                <img src="images/difference-between-supervised-and-unsupervised-learning.jpg" alt="difference between supervised and unsupervised learning" class="col-lg-12">
+            </div>
+            
+            <h4>What is Supervised Machine Learning?</h4>
+            <p class="lead">
+            In Supervised learning, you train the machine using data which is well "labeled." It means some data is already tagged with the correct answer. It can be compared to learning which takes place in the presence of a supervisor or a teacher.
+            </p>
+            
+            <h4>What is Unsupervised Machine Learning?</h4>
+            <p class="lead">
+            Unsupervised learning is a machine learning technique, where you do not need to supervise the model. Instead, you need to allow the model to work on its own to discover information. It mainly deals with the unlabelled data.
+            </p>
+            
+            <h4>Supervised Machine Learning Techniques</h4>
+            <ul class="lead">
+                <li>Regression
+                    <ul>
+                        <li>Regression technique predicts a single output value using training data.</li>
+                    </ul>
+                </li>
+                <li>
+                   Classification
+                    <ul>
+                        <li>Classification means to group the output inside a class. If the algorithm tries to label input into two distinct classes, it is called binary classification. Selecting between more than two classes is referred to as multiclass classification.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="center mx-auto col-lg-8">
+                <img src="images/3-Supervised-Learning-Example.png" alt="supervised learning techniques example" class="col-lg-12">
+            </div>
+            
+            <h4>Unsupervised Machine Learning Techniques</h4>
+            <ul class="lead">
+                <li>Clustering
+                    <ul>
+                        <li>
+                        Clustering is an important concept when it comes to unsupervised learning. It mainly deals with finding a structure or pattern in a collection of uncategorized data. Clustering algorithms will process your data and find natural clusters(groups) if they exist in the data.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="center mx-auto col-lg-8">
+                <img src="images/unsupervised-learning.png" alt="unsupervised learning techniques example" class="col-lg-12">
+            </div>
+            
+            
+            <h4>Supervised Vs Unsupervised</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered table-light">
+                    <tr>
+                        <th>Parameters</th>
+                        <th>Supervised</th>
+                        <th>Unsupervised</th>
+                    </tr>
+                    
+                    <tr>
+                        <th>Process</th>
+                        <td>In a supervised learning model, input and output variables will be given</td>
+                        <td>In unsupervised learning model, only input data will be given</td>
+                    </tr>
+                    <tr>
+                       <th>Input Data</th>
+                        <td>Algorithms are trained using labeled data</td>
+                        <td>Algorithms are used against data which is not labeled</td>
+                    </tr>
+                    <tr>
+                       <th>Algorithms Used</th>
+                        <td>Support vector machine, Neural network, Linear and logistics regression, random forest, and Classification trees</td>
+                        <td>Unsupervised algorithms can be divided into different categories: like Cluster algorithms, K-means, Hierarchical clustering, etc</td>
+                    </tr>
+                    <tr>
+                       <th>Computational Complexity</th>
+                        <td>Supervised learning is a simpler method</td>
+                        <td>Unsupervised learning is computationally complex</td>
+                    </tr>
+                    <tr>
+                       <th>Accuracy of Results</th>
+                        <td>Highly accurate and trustworthy method</td>
+                        <td>Less accurate and trustworthy method.</td>
+                    </tr>
+                    
+                    <tr>
+                       <th>Real Time Learning</th>
+                        <td>Learning method takes place offline</td>
+                        <td>Learning method takes place in real time</td>
+                    </tr>
+                    
+                    <tr>
+                       <th>Main Drawback</th>
+                        <td>Classifying big data can be a real challenge in Supervised Learning.</td>
+                        <td>You cannot get precise information regarding data sorting, and the output as data used in unsupervised learning is labeled and not known.</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h4>Training &amp; Testing in ML</h4>
+            <div class="center mx-auto col-lg-8">
+                <img src="images/training-and-testing-machine-learning.jpg" alt="training and testing machine learning model" class="col-lg-12">
+            </div>
+            
+            <h2>K-Nearest Neighbor(KNN) Algorithm</h2>
+            <p class="lead">
+                🔵 K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.
+                <br><br>
+                🔵 K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories.
+                <br><br>
+                🔵 K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
+                <br><br>
+                🔵 K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems.
+                <br><br>
+                🔵 K-NN is a <span class="point">non-parametric algorithm</span>, which means it does not make any assumption on underlying data.
+                <br><br>
+                🔵 It is also called a <span class="point">lazy learner algorithm</span> because it does not learn from the training set immediately instead it stores the dataset and at the time of classification, it performs an action on the dataset.
+                <br><br>
+                
+                <span class="dark-text-highlight">Example: </span>
+                Suppose, we have an image of a creature that looks similar to cat and dog, but we want to know either it is a cat or dog. So for this identification, we can use the KNN algorithm, as it works on a similarity measure. Our KNN model will find the similar features of the new data set to the cats and dogs images and based on the most similar features it will put it in either cat or dog category.
+            </p>
+            
+            <div class="center mx-auto bg-white col-lg-8">
+                <img src="images/k-nearest-neighbor-algorithm-for-machine-learning.png" alt="k nearest neighbor algorithm for machine learning" class="col-lg-12">
+            </div>
+            
+            <h2>How does KNN work?</h2>
+            <ul>
+                <li><span class="dark-text-highlight">Step-1:</span> Select the number K of the neighbors.</li>
+                <li><span class="dark-text-highlight">Step-2:</span> Calculate the Euclidean distance of K number of neighbors.</li>
+                <li><span class="dark-text-highlight">Step-3:</span> Take the K nearest neighbors as per the calculated Euclidean distance.</li>
+                <li><span class="dark-text-highlight">Step-4:</span> Among these k neighbors, count the number of the data points in each category.</li>
+                <li><span class="dark-text-highlight">Step-5:</span> Assign the new data points to that category for which the number of the neighbor is maximum.</li>
+                <li><span class="dark-text-highlight">Step-6:</span> Our model is ready.</li>
+            </ul>
+            
+            <h4>Select Value of K in the KNN Algorithm</h4>
+            <p class="lead">Below are some points to remember while selecting the value of K in the K-NN algorithm:</p>
+            
+            <ul>
+                <li>There is no particular way to determine the best value for "K", so we need to try some values to find the best out of them. The most preferred value for K is 5.</li>
+                <li>A very low value for K such as K=1 or K=2, can be noisy and lead to the effects of outliers in the model.</li>
+                <li>Large values for K are good, but it may find some difficulties.</li>
+            </ul>
+            
+            <h4>Pros Vs Cons of KNN Algorithm</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered text-light">
+                    <tr>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>It is simple to implement.</td>
+                        <td>Always needs to determine the value of K which may be complex some time.</td>
+                    </tr>
+                    <tr>
+                        <td>It is robust to the noisy training data</td>
+                        <td>The computation cost is high because of calculating the distance between the data points for all the training samples.</td>
+                    </tr>
+                    <tr>
+                        <td>It can be more effective if the training data is large.</td>
+                        <td>--</td>
+                    </tr>
+                </table>
+        
+                </div>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="slide13,14">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-10 mx-auto">
