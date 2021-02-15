@@ -15,12 +15,16 @@ header {
 }
 
 section {
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 .point {
     font-weight: 600;
     color: #007BFF;
+}
+
+.dark-text-highlight {
+    color:yellow;
 }
 
 .question {
@@ -33,4 +37,21 @@ section {
     padding: 10px;
     font-family: cursive;
     font-weight: bold;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.no-right-margin {
+    margin-right: 0 !important;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.first-letter-bold::first-letter {
+    font-weight: 600;
 }

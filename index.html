@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
+            <a class="nav-link js-scroll-trigger" href="#slide1-2">Slide #1,2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#agents">Agents</a>
+            <a class="nav-link js-scroll-trigger" href="#slide3">Slide #3</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#kworld">K &amp; W World</a>
@@ -51,10 +51,10 @@
     </div>
   </header>
 
-  <section id="introduction">
-    <div class="container">
+  <section id="slide1-2">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <h2>What is AI?</h2>
           <p class="lead">
           The study and design of computing systems that perceives its environment and takes actions like human beings. <br>
@@ -118,7 +118,7 @@
           <img class="w-100" src="images/foundation-of-ai.jpeg">
           <br><br>
           <h2>Pros &amp; Cons of AI</h2>
-          <table class="table table-bordered">
+          <table class="table table-bordered table-circle">
               <tr>
                   <th>Pros</th>
                   <th>Cons</th>
@@ -159,20 +159,201 @@
     </div>
   </section>
 
-  <section id="agents" class="bg-dark text-light">
-    <div class="container">
+  <section id="slide3" class="bg-dark text-light">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
+          <h2>What is Agents?</h2>
+          <p class="lead">Artificial intelligence is defined as a study of rational agents. A rational agent could be anything which makes decisions, as a person, firm, machine, or software. It carries out an action with the best outcome after considering past and current percepts(agent’s perceptual inputs at a given instance).</p>
           
+            <p class="lead">An AI system is composed of an <span class="dark-text-highlight">agent</span> and its <span class="dark-text-highlight">environment</span>. The <q>agents</q> act in their environment. The <q>environment</q> may contain other agents. An <span class="dark-text-highlight">agent</span> is anything that can be viewed as :</p>
+           <ul>
+               <li>perceiving its environment through <span class="dark-text-highlight">sensors</span></li>
+               <li>acting upon that environment through <span class="dark-text-highlight">actuators</span></li>
+            </ul>
+            
+            <img class="rounded mx-auto d-block" src="/images/agents.png" alt=""><br><br>
+            
+            <h2>Human &amp; Robotic Sensor &amp; Acutator</h2>
+              
+              <table class="table table-light">
+                  <tr>
+                      <th>Agent</th>
+                      <th>Sensor</th>
+                      <th>Acutator</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>Human Agent</th>
+                      <td>Eyes, Ear, &amp; other organs.</td>
+                      <td>Hands, legs, mouth, &amp; other body parts.</td>
+                  </tr>
+                  
+                  <tr>
+                      <th>Robotic Agent</th>
+                      <td>Camera, Recorder, &amp; infrared range finder.</td>
+                      <td>Various motors.</td>
+                  </tr>
+                  
+                  <tr>
+                      <th>Software Agent</th>
+                      <td>Keystrokes, File contents, Received Network Packages.</td>
+                      <td>Screen, Files, Sent Network Packets.</td>
+                  </tr>
+              </table>
+              
+              <h4>Structure of Intelligent Agent</h4>
+              <p class="lead">
+                 
+                 <code>Agent = Architecture + Agent Program</code><br><br>
+                 
+                  <span class="point">Architecture: </span> is the machinery that the agent executes on. It is a device with sensors and actuators, for example : a robotic car, a camera, a PC.<br>
+              
+                  <span class="point">Agent Program: </span> is an implementation of an agent function.<br>
+              
+                  <span class="point">Agent Function: </span> is a map from the percept sequence(history of all that an agent has perceived till date) to an action.
+                  
+              
+              </p>
+            
+            <h2>Agent Terminology</h2>
+            <ul>
+                <li><span class="point">Performance Measure of Agent: </span> It is the criteria, which determines how successful an agent is.</li>
+                <li><span class="point">Behavior of Agent: </span> It is the action that agent performs after any given sequence of percepts.</li>
+                <li><span class="point">Percept: </span> It is agent’s perceptual inputs at a given instance.</li>
+                <li><span class="point">Percept Sequence: </span> It is the history of all that an agent has perceived till date.</li>
+                <li><span class="point">Agent Function: </span> It is a map from the precept sequence to an action.</li>
+            </ul>
+            
+            <h2>What is Rationality?</h2>
+            <p class="lead">Rationality is nothing but status of being <span class="bold">reasonable</span>, <span class="bold">sensible</span>, and having good sense of <span class="bold">judgment</span>.
+            <br><br>
+            Rationality is concerned with expected <span class="dark-text-highlight">actions</span> and results depending upon what the agent has <span class="dark-text-highlight">perceived</span>. Performing actions with the aim of obtaining useful information is an important part of rationality.</p>
+            
+            <h2>What is Ideal Rational Agent?</h2>
+            <p class="lead">
+                Ideal Rational Agent is capable of doing expected actions to maximize its performance measure, on the basis of −
+                <ul>
+                    <li>Its percept sequence</li>
+                    <li>Its built-in knowledge base</li>
+                </ul>
+                
+                Rationality of an agent depends on the following −
+                
+                <ul>
+                    <li>The <span class="dark-text-highlight">performance measure,</span> which determine the degree of success.</li>
+                    <li>Agent’s<span class="dark-text-highlight"> Percept Sequence </span>till now.</li>
+                    <li>The agent’s <span class="dark-text-highlight">prior knowledge about the environment.</span></li>
+                    <li>The <span class="dark-text-highlight">actions</span> that the agent can carry out.</li>
+                </ul>
+            </p>
+            
+            <h2>Rationality Vs Omniscience</h2>
+            <table class="table table-light">
+                <tr>
+                    <th>Rationality</th>
+                    <th>Omniscience</th>
+                </tr>
+                
+                <tr>
+                    <td>all knowing with infinite knowledge</td>
+                    <td>only knows the actual outcome of its actions and can act accordingly</td>
+                </tr>
+            </table>
+            
+            <h2>Rationality Vs Perfection</h2>
+            <table class="table table-light">
+                <tr>
+                    <th>Rationality</th>
+                    <th>Perfection</th>
+                </tr>
+                
+                <tr>
+                    <td>maximizes expected performance</td>
+                    <td>maximizes actual performance</td>
+                </tr>
+            </table>
+            
+            <h4>Proposed definition required</h4>
+            <ul>
+                <li>Information Gathering
+                    <ul>
+                        <li>Agents can perform actions in order to modify future percepts so as to obtain useful information.</li>
+                    </ul>
+                </li>
+                <li>Learning
+                    <ul>
+                        <li>An agent can also learn from what it perceives.</li>
+                    </ul>
+                </li>
+                <li>Autonomy
+                    <ul>
+                        <li>An agent is autonomous if its behavior is determined by its own experience (with ability to learn and adapt).</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h2>PEAS</h2>
+            <p class="lead">Specifying the task environment is always the first step in designing agent. <br>
+                <code><b class="bold">P</b>erformance, <b class="bold">E</b>nvironment, <b class="bold">A</b>ctuators, <b class="bold">S</b>ensors</code>
+            </p>
+            
+            <h4>Taxi Driver Example</h4>
+            <table class="table table-light">
+                <tr>
+                    <th>Performance</th>
+                    <th>Environment</th>
+                    <th>Actuators</th>
+                    <th>Sensors</th>
+                </tr>
+                <tr>
+                    <td>safe, fast, legal, comfortable trip</td>
+                    <td>roads, other traffic, pedestrians, customers</td>
+                    <td>steering, accelerator, brake, signal, horn, display</td>
+                    <td>camera, sonar, speedometer, GPS, odometer, engine sensors, keyboard, accelerator</td>
+                </tr>
+            </table>
+            
+            
+            <h4>Medical Diagnosis System Example</h4>
+            <table class="table table-light">
+                <tr>
+                    <th>Performance</th>
+                    <th>Environment</th>
+                    <th>Actuators</th>
+                    <th>Sensors</th>
+                </tr>
+                <tr>
+                    <td>healthy patient, minimize costs, lawsuits</td>
+                    <td>patient, hospital, staff</td>
+                    <td>display questions, tests, diagnosis, treatments, referrals</td>
+                    <td>keyboard entry of symptoms, findings, patient’s answers</td>
+                </tr>
+            </table>
+            
+            <h4>Part Picking Robot Example</h4>
+            <table class="table table-light">
+                <tr>
+                    <th>Performance</th>
+                    <th>Environment</th>
+                    <th>Actuators</th>
+                    <th>Sensors</th>
+                </tr>
+                <tr>
+                    <td>Percentage of parts in correct bins</td>
+                    <td>Conveyer belt with parts, bins</td>
+                    <td>Jointed arm and hand</td>
+                    <td>camera, joint angle sensors</td>
+                </tr>
+            </table>
         </div>
-      </div>
-    </div>
-  </section>
-
+     </div>
+</section>
+ 
   <section id="kworld">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
           
         </div>
       </div>
