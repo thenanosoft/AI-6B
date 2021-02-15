@@ -27,6 +27,10 @@ section {
     color:yellow;
 }
 
+.text-highlight {
+    color:coral;
+}
+
 .question {
     padding: 10px 0px 0px 0px;
     color: red;
@@ -49,9 +53,5 @@ section {
 }
 
 .bold {
-    font-weight: 600;
-}
-
-.first-letter-bold::first-letter {
     font-weight: 600;
 }

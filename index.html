@@ -36,7 +36,10 @@
             <a class="nav-link js-scroll-trigger" href="#slide3-4">Slide #3,4</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#slide10">K &amp; W World</a>
+            <a class="nav-link js-scroll-trigger" href="#slide10">Slide #10</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#slide12">Slide #12</a>
           </li>
         </ul>
       </div>
@@ -610,7 +613,216 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          
+          <h2>First-Order Logic (FOL)</h2>
+        <ul>
+            <li>FOL is another way of knowledge representation in artificial intelligence. It is an extension to propositional logic.</li>
+            <li>FOL is sufficiently expressive to represent the natural language statements in a concise way.</li>
+            <li>FOL is also known as Predicate logic or First-order predicate logic. First-order logic is a powerful language that develops information about the objects in a more easy way and can also express the relationship between those objects.</li>
+            <li>FOL (like natural language) does not only assume that the world contains facts like propositional logic but also assumes the following things in the world
+                <ul>
+                    <li><span class="text-highlight">Objects: </span>A, B, people, numbers, colors, wars, theories, squares, pits, wumpus, etc.</li>
+                    <li><span class="text-highlight">Relations: </span>
+                        <ul>
+                            <li><span class="text-highlight">It can be unary relation such as:</span> red, round, is adjacent,</li>
+                            <li><span class="text-highlight">n-any relation such as:</span> the sister of, brother of, has color, comes between</li>
+                        </ul>
+                    </li>
+                    <li><span class="text-highlight">Function: </span>Father of, best friend, third inning of, end of, etc.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <p class="lead">As a natural language, first-order logic also has two main parts:</p>
+        
+        <ol>
+            <li>Syntax</li>
+            <li>Semantics</li>
+        </ol>
+        
+        <h2>Syntax of First-Order logic</h2>
+        <p class="lead">The syntax of FOL determines which collection of symbols is a logical expression in FOL. The basic syntactic elements of FOL are symbols. We write statements in short-hand notation in FOL.</p>
+        
+        <h2>Basic Elements of First-order logic</h2>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Constant</th>
+                    <td>1, 2, A, John, Mumbai, cat,</td>
+                </tr>
+                <tr>
+                    <th>Variables</th>
+                    <td>x, y, z, a, b,</td>
+                </tr>
+                <tr>
+                    <th>Predicates</th>
+                    <td>Brother, Father, Uncle,</td>
+                </tr>
+                <tr>
+                    <th>Function</th>
+                    <td>sqrt, LeftLegOf, pow,</td>
+                </tr>
+                <tr>
+                    <th>Connectives</th>
+                    <td>∧, ∨, ¬, ⇒, ⇔</td>
+                </tr>
+                
+                <tr>
+                    <th>Equality</th>
+                    <td>==</td>
+                </tr>
+                <tr>
+                    <th>Quantifier</th>
+                    <td>∀, ∃</td>
+                </tr>
+            </table>
+        </div>
+        
+        
+            <h2>Atomic Sentence</h2>
+            <ul>
+                <li>Atomic sentences are the most basic sentences of first-order logic. These sentences are formed from a predicate symbol followed by a parenthesis with a sequence of terms.</li>
+                <li>We can represent atomic sentences as <code>Predicate (term1, term2, ......, term n)</code>.</li>
+            </ul>
+            
+            <span class="text-highlight">Example:</span><br>
+            <code>Fahan and Nauman are brothers: => Brothers(Farhan, Nauman).</code><br>
+            <code>Chinky is a cat: => cat (Chinky).</code>
+            
+            <h2>Complex Sentence</h2>
+            <ul>
+                <li>Complex sentences are made by combining atomic sentences using connectives.</li>
+            </ul>
+            
+            <p class="lead">First-order logic statements can be divided into two parts:</p>
+            
+            <ol>
+                <li><span class="text-highlight">Subject: </span>Subject is the main part of the statement.</li>
+                <li><span class="text-highlight">Predicate: </span>A predicate can be defined as a relation, which binds two atoms together in a statement.</li>
+            </ol>
+            
+            <p class="lead">Consider the statement: <span class="text-highlight">"x is an integer." </span>it consists of two parts, the first part <code>x</code> is the <span class="text-highlight">subject</span> of the statement and second part <code>is an integer</code>, is known as a <span class="text-highlight">predicate.</span></p>
+            
+            <div class="">
+                <img class="" src="images/first-order-logic-in-artificial-intelligence.png" alt="">
+            </div>
+            
+            <h2>Quantifiers in First-order logic:</h2>
+            
+            <ul>
+                <li>A quantifier is a language element which generates quantification, and quantification specifies the quantity of specimen in the universe of discourse.</li>
+                <li>These are the symbols that permit to determine or identify the range and scope of the variable in the logical expression.</li>
+            </ul>
+            
+            <p class="lead">There are two types of quantifier:</p>
+            
+            <ol>
+                <li>
+                    <span class="text-highlight">Universal Quantifier: </span>for all, everyone, everything.
+                </li>
+
+                <li>
+                    <span class="text-highlight">Existential Quantifier: </span>for some, at least one.
+                </li>
+            </ol>
+            
+            <h4>Universal Quantifier:</h4>
+            <p class="lead">Universal quantifier is a symbol of logical representation, which specifies that the statement within its range is true for everything or every instance of a particular thing.</p>
+            
+            <p class="lead">If x is a variable, then ∀x is read as:</p>
+            <ul>
+                <li>For all x</li>
+                <li>For each x</li>
+                <li>For every x</li>
+            </ul>
+            
+            <span class="text-highlight">Example:</span>
+            <p>All man drink coffee:</p>
+            
+            <p>Let a variable x which refers to a cat so all x can be represented in UOD as below:</p>
+            
+            <div>
+                <img src="images/first-order-logic-in-artificial-intelligence2.png" alt="">
+            </div>
+            
+            <code>∀x man(x) → drink (x, coffee).</code><br>
+            <p>It will be read as: There are all x where x is a man who drink coffee.</p>
+            
+            
+            <h4>Existential Quantifier:</h4>
+            <p class="lead">Existential quantifiers are the type of quantifiers, which express that the statement within its scope is true for at least one instance of something. <br>
+            
+            It is denoted by the logical operator ∃, which resembles as inverted E. When it is used with a predicate variable then it is called as an existential quantifier.
+            </p>
+            
+            <p class="lead">If x is a variable, then existential quantifier will be ∃x or ∃(x). And it will be read as:</p>
+            <ul>
+                <li>There exists a 'x.'</li>
+                <li>For some 'x.'</li>
+                <li>For at least one 'x.'</li>
+            </ul>
+            
+            <span class="text-highlight">Example:</span>
+            <p>Some boys are intelligent.</p>
+            
+            <div>
+                <img src="images/first-order-logic-in-artificial-intelligence3.png" alt="">
+            </div>
+            
+            <code>∃x: boys(x) ∧ intelligent(x)</code><br>
+            
+            <p>It will be read as: There are some x where x is a boy who is intelligent.</p>
+            
+            <h4 class="text-highlight">Points to remember:</h4>
+            <ul>
+                <li>The main connective for universal quantifier ∀ is implication →.</li>
+                <li>The main connective for existential quantifier ∃ is and ∧.</li>
+            </ul>
+            
+            <h4 class="text-highlight">Properties of Quantifiers:</h4>
+            <ul>
+                <li>In universal quantifier, ∀x∀y is similar to ∀y∀x.</li>
+                <li>In Existential quantifier, ∃x∃y is similar to ∃y∃x.</li>
+                <li>∃x∀y is not similar to ∀y∃x.</li>
+            </ul>
+            
+            <p class="text-highlight">Some examples FOL using quantifier:</p>
+            
+            <ol>
+                <li>All birds fly.</li>
+                In this question the predicate is "fly(bird)."
+                <br>
+                And since there are all birds who fly so it will be represented as follows.
+                <br>
+                <code>∀x bird(x) → fly(x).</code>
+                <br><br>
+                <li>Every man respects his parent.</li>
+                In this question, the predicate is "respect(x, y)," where x=man, and y= parent.
+                <br>
+                Since there is every man so will use ∀, and it will be represented as follows:
+                <br>
+                <code>∀x man(x) → respects (x, parent).</code>
+                <br><br>
+                <li>Some boys play cricket.</li>
+                In this question, the predicate is "play(x, y)," where x= boys, and y= game. Since there are some boys so we will use ∃, and it will be represented as:
+                
+                <code> ∃x boys(x) → play(x, cricket).</code>
+                
+            </ol>
+            
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section id="slide12" class="bg-dark text-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+        
         </div>
       </div>
     </div>
