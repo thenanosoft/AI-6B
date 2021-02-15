@@ -33,7 +33,7 @@
             <a class="nav-link js-scroll-trigger" href="#slide1-2">Slide #1,2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#slide3">Slide #3</a>
+            <a class="nav-link js-scroll-trigger" href="#slide3-4">Slide #3,4</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#kworld">K &amp; W World</a>
@@ -67,7 +67,7 @@
               <span class="point">Artifical Intelligence: </span> is the intelligence exhibited by machines or software.
           </p>
           
-          <table class="table table-bordered">
+          <table class="table table-bordered table-responsive">
              <h4>Four Schools of Thoughts</h4>
               <tr>
                   <th>Thinking humanly</th>
@@ -118,7 +118,7 @@
           <img class="w-100" src="images/foundation-of-ai.jpeg">
           <br><br>
           <h2>Pros &amp; Cons of AI</h2>
-          <table class="table table-bordered table-circle">
+          <table class="table table-bordered table-responsive">
               <tr>
                   <th>Pros</th>
                   <th>Cons</th>
@@ -159,7 +159,7 @@
     </div>
   </section>
 
-  <section id="slide3" class="bg-dark text-light">
+  <section id="slide3-4" class="bg-dark text-light">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -172,11 +172,11 @@
                <li>acting upon that environment through <span class="dark-text-highlight">actuators</span></li>
             </ul>
             
-            <img class="rounded mx-auto d-block" src="images/agents.png" alt=""><br><br>
+            <img class="rounded col-lg-12 mx-auto d-block" src="images/agents.png" alt=""><br><br>
             
             <h2>Human &amp; Robotic Sensor &amp; Acutator</h2>
               
-              <table class="table table-light">
+              <table class="table table-light table-responsive">
                   <tr>
                       <th>Agent</th>
                       <th>Sensor</th>
@@ -221,6 +221,8 @@
                 <li><span class="point">Agent Function: </span> It is a map from the precept sequence to an action.</li>
             </ul>
             
+            <hr class="border border-primary col-6 mx-auto" />
+            
             <h2>What is Rationality?</h2>
             <p class="lead">Rationality is nothing but status of being <span class="bold">reasonable</span>, <span class="bold">sensible</span>, and having good sense of <span class="bold">judgment</span>.
             <br><br>
@@ -245,7 +247,7 @@
             </p>
             
             <h2>Rationality Vs Omniscience</h2>
-            <table class="table table-light">
+            <table class="table table-light table-responsive">
                 <tr>
                     <th>Rationality</th>
                     <th>Omniscience</th>
@@ -270,6 +272,8 @@
                 </tr>
             </table>
             
+            <hr class="border border-primary col-6 mx-auto" />
+            
             <h4>Proposed definition required</h4>
             <ul>
                 <li>Information Gathering
@@ -289,13 +293,15 @@
                 </li>
             </ul>
             
+            <hr class="border border-primary col-6 mx-auto" />
+            
             <h2>PEAS</h2>
             <p class="lead">Specifying the task environment is always the first step in designing agent. <br>
                 <code><b class="bold">P</b>erformance, <b class="bold">E</b>nvironment, <b class="bold">A</b>ctuators, <b class="bold">S</b>ensors</code>
             </p>
             
             <h4>Taxi Driver Example</h4>
-            <table class="table table-light">
+            <table class="table table-light table-responsive">
                 <tr>
                     <th>Performance</th>
                     <th>Environment</th>
@@ -312,7 +318,7 @@
             
             
             <h4>Medical Diagnosis System Example</h4>
-            <table class="table table-light">
+            <table class="table table-light table-responsive">
                 <tr>
                     <th>Performance</th>
                     <th>Environment</th>
@@ -328,7 +334,7 @@
             </table>
             
             <h4>Part Picking Robot Example</h4>
-            <table class="table table-light">
+            <table class="table table-light table-responsive">
                 <tr>
                     <th>Performance</th>
                     <th>Environment</th>
@@ -342,6 +348,228 @@
                     <td>camera, joint angle sensors</td>
                 </tr>
             </table>
+            <hr class="border border-primary col-6 mx-auto" />
+            <h2>Properties of Task Environment</h2>
+            
+            <h4>Single-Agent Vs Multi-Agent</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Single-Agent</th>
+                    <th>Multi-Agent</th>
+                </tr>
+                
+                <tr>
+                    <td>environments are those on which a finite set of possibilities can drive the final outcome of the task.</td>
+                    <td>Environments rely on unknown and rapidly changing data sources.</td>
+                </tr>
+            </table>
+            
+            <h4>Fully Observable Vs Partial Observable</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Fully Observable</th>
+                    <th>Partial Observable</th>
+                </tr>
+                
+                <tr>
+                    <td>if the sensors can always see the entire state of the environment.</td>
+                    <td>if the sensors can see only a fraction of the state. Partial Observable agent needs memory.</td>
+                </tr>
+            </table>
+            
+            <h4>Deterministic Vs Stochastic</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Deterministic</th>
+                    <th>Strategic</th>
+                    <th>Stochastic</th>
+                </tr>
+                
+                <tr>
+                    <td>Where your agent’s actions uniquely determined the outcome.</td>
+                    <td>Environment is deterministic except for the actions of other agents.</td>
+                    <td>We can’t predict the outcome.</td>
+                </tr>
+            </table>
+            
+            <h4>Episodic Vs Sequential</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Episodic</th>
+                    <th>Sequential</th>
+                </tr>
+                
+                <tr>
+                    <td>The agent's experience is divided into atomic "episodes".</td>
+                    <td>The current decision could affect all future decisions.</td>
+                </tr>
+                
+                <tr>
+                    <td>Each episode consists of the agent perceiving and then performing a single action.</td>
+                    <td>--</td>
+                </tr>
+                
+                <tr>
+                    <td>The choice of action in each episode depends only on the episode itself.</td>
+                    <td>--</td>
+                </tr>
+            </table>
+            
+            <h4>Static Vs Dynamic Vs Semi-Dynamic</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Static</th>
+                    <th>Dynamic</th>
+                    <th>Semi-Dynamic</th>
+                </tr>
+                
+                <tr>
+                    <td>Environment cannot change while an agent is deliberating</td>
+                    <td>Environment can change while an agent is deliberating</td>
+                    <td>If the environment itself doesn’t change with time but the agent's performance score does.</td>
+                </tr>
+            </table>
+            
+            <h4>Discrete Vs Continuous</h4>
+            <table class="table table-bordered text-light table-responsive">
+                <tr>
+                    <th>Discrete</th>
+                    <th>Continuous</th>
+                </tr>
+                
+                <tr>
+                    <td>Environments are those on which a finite set of possibilities can drive the final outcome of the task.</td>
+                    <td>Environments rely on unknown and rapidly changing data sources.</td>
+                </tr>
+            </table>
+            
+            <h4>Example Task Environment Table</h4>
+            
+            <table class="table table-light table-responsive table-responsive">
+                <thead>
+                    <tr>
+                        <th>Task Environment</th>
+                        <th>Observable</th>
+                        <th>Determines</th>
+                        <th>Episodic</th>
+                        <th>Static</th>
+                        <th>Discrete</th>
+                        <th>Agent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Crossword Puzzle</th>
+                        <td>Fully</td>
+                        <td>Determines</td>
+                        <td>Sequential</td>
+                        <td>Static</td>
+                        <td>Discrete</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <th>Chess with clock</th>
+                        <td>Fully</td>
+                        <td>Strategic</td>
+                        <td>Sequential</td>
+                        <td>Static</td>
+                        <td>Discrete</td>
+                        <td>Multi</td>
+                    </tr>
+                    <tr>
+                        <th>Poker</th>
+                        <td>Partially</td>
+                        <td>Strategic</td>
+                        <td>Sequential</td>
+                        <td>Static</td>
+                        <td>Discrete</td>
+                        <td>Multi</td>
+                    </tr>
+                    <tr>
+                        <th>Backgammon</th>
+                        <td>Fully</td>
+                        <td>Stochastic</td>
+                        <td>Sequential</td>
+                        <td>Static</td>
+                        <td>Discrete</td>
+                        <td>Multi</td>
+                    </tr>
+                    <tr>
+                        <th>Taxi driving</th>
+                        <td>Partially</td>
+                        <td>Stochastic</td>
+                        <td>Sequential</td>
+                        <td>Dynamic</td>
+                        <td>Con</td>
+                        <td>Multi</td>
+                    </tr>
+                    <tr>
+                        <th>Medical Diagnosis</th>
+                        <td>Partially</td>
+                        <td>Stochastic</td>
+                        <td>Sequential</td>
+                        <td>Dynamic</td>
+                        <td>Con</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <th>Image Analysis</th>
+                        <td>Fully</td>
+                        <td>Deterministic</td>
+                        <td>Episodic</td>
+                        <td>Semi</td>
+                        <td>Con</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <th>Part pick mg robot</th>
+                        <td>Partially</td>
+                        <td>Stochastic</td>
+                        <td>Episodic</td>
+                        <td>Dynamic</td>
+                        <td>Con</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <th>Refing controller</th>
+                        <td>Partially</td>
+                        <td>Stochastic</td>
+                        <td>Sequential</td>
+                        <td>Dynamic</td>
+                        <td>Con</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <th>Interstice English tutor</th>
+                        <td>Partially</td>
+                        <td>Stochastic</td>
+                        <td>Sequential</td>
+                        <td>Dynamic</td>
+                        <td>Discrete</td>
+                        <td>Multi</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="border border-primary col-6 mx-auto" />
+            <h4>Classical &amp; Modern AI</h4>
+            <ul>
+                <li><span class="point">Classical AI</span>
+                    <ul>
+                        <li>
+                        Classic AI consists mainly in inference engines used for <span class="dark-text-highlight">rule based</span> systems. The main goal was to map "human reason" and "process data" with semantic content. The main early results were fraud detection, medical diagnose and automating expert knowledge about specific domains.
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="point">Modern AI</span>
+                    <ul>
+                        <li>
+                        Modern AI "Deep Learning" encloses also computational intelligence. Neural Networks, Genetic Algorithms, Sworm Algorithms and Fuzzy Logic are the pillars of computational intelligence.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <img src="images/classical-vs-modern-ai.png" class="rounded col-lg-12 mx-auto d-block" alt="">
         </div>
      </div>
 </section>
